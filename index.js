@@ -37,13 +37,13 @@ $(document).ready(function() {
 						                 var articleName = data2.articles[i].title;
 						                 var articles = document.createElement("LI");
 						                 articles.setAttribute("id", "articles");
+						                 articles.innerHTML = articleName;
 						                 var description = document.createElement("P");
 						                 var descriptionText = data2.articles[i].description;
+						                 description.innerHTML = "-" + descriptionText;
 						                 var url = document.createElement("A");
 						                 url.setAttribute('href', data2.articles[i].url);
-						                 articles.innerHTML = articleName;
-						                 description.innerHTML = descriptionText;
-						                 url.innerHTML = url;
+						                 url.innerHTML = "-" + url;
 						                 document.getElementById("list").appendChild(articles);
 						                 document.getElementById("list").appendChild(description);
 						                 document.getElementById("list").appendChild(url);
