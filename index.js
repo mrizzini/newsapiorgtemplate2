@@ -23,6 +23,7 @@ $(document).ready(function() {
 	//   });
 	    $('#source').submit(function(event) {
 		      event.preventDefault();
+		      list.innerHTML = "";
 		 // alert(document.getElementById("selection").value);
 		 // alert(document.getElementById("selection").name);
 		      $.ajax({
@@ -52,5 +53,7 @@ $(document).ready(function() {
 		          });
 	        });
 });
+
+
 
 
