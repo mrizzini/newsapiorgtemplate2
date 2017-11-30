@@ -44,9 +44,13 @@ $(document).ready(function() {
 						                 var url = document.createElement("A");
 						                 url.setAttribute('href', data2.articles[i].url);
 						                 url.innerHTML = "-" + url;
+						                 //var image = document.createElement("IMG");
+						                 //image.src = data2.articles[i].urlToImage;
+						             
 						                 document.getElementById("list").appendChild(articles);
 						                 document.getElementById("list").appendChild(description);
 						                 document.getElementById("list").appendChild(url);
+						                 //document.getElementById("list").appendChild(image);
 					               }
 				              }
 			             } 
