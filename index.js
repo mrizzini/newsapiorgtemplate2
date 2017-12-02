@@ -34,25 +34,25 @@ $(document).ready(function() {
 				    	if (data2.status == "ok") {
 					    console.log(data2);
 					    	for (var i = 0; i < data2.articles.length; i++) {
-					        		$("#headline").html(data2.articles[i].source.name + " Top Headlines");
-						        	var headline = data2.articles[i].title;
-						            var articles = document.createElement("LI");
-						            var anchor = document.createElement("A");
-						            anchor.setAttribute('href', data2.articles[i].url);
-						            anchor.setAttribute('target', "_blank");
-						            anchor.innerHTML = headline;
-						            articles.setAttribute("id", "articles" + i);
-						            var description = document.createElement("P");
-						            var descriptionText = data2.articles[i].description;
-						            description.innerHTML = "-" + descriptionText;
+					        	$("#headline").html(data2.articles[i].source.name + " Top Headlines");
+						        var headline = data2.articles[i].title;
+						        var articles = document.createElement("LI");
+						        var anchor = document.createElement("A");
+						        anchor.setAttribute('href', data2.articles[i].url);
+						        anchor.setAttribute('target', "_blank");
+						        anchor.innerHTML = headline;
+						        articles.setAttribute("id", "articles" + i);
+						        var description = document.createElement("P");
+						        var descriptionText = data2.articles[i].description;
+						        description.innerHTML = "-" + descriptionText;
 						            // var url = document.createElement("A");
 						            // url.setAttribute('href', data2.articles[i].url);
 						            // url.innerHTML = "-" + url;
 						            // var image = document.createElement("IMG");
 						            // image.src = data2.articles[i].urlToImage;
-						            document.getElementById("list").appendChild(articles);
-						            document.getElementById("articles" + i).appendChild(anchor);
-						            document.getElementById("list").appendChild(description);
+						        document.getElementById("list").appendChild(articles);
+						        document.getElementById("articles" + i).appendChild(anchor);
+						        document.getElementById("list").appendChild(description);
 						            // document.getElementById("list").appendChild(url);
 						            // document.getElementById("list").appendChild(image);
 					               }
